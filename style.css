@@ -1,0 +1,131 @@
+/* =========================
+   CSS RESET + THEME
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root color variables */
+:root {
+  --primary: #ef4907e2;
+  --background: #c3105bdc;
+  --text: #100a02;
+}
+
+/* Base body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* =========================
+   HEADER & NAVIGATION
+========================= */
+header {
+  background: #f578b2dc;
+  padding: 1rem 0;
+  box-shadow: 0 2px 8px rgba(41, 112, 83, 0.845);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 2rem auto;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn {
+  background-color: var(--primary);
+  color: rgba(12, 205, 51, 0.908);
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background-color: #5eccf4;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* =========================
+   SECTIONS SPACING
+========================= */
+section {
+  margin-bottom: 3rem;
+}
+
+/* =========================
+   PROJECT / SKILLS BOX
+========================= */
+article,
+.skill-box {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1.5rem;
+}
